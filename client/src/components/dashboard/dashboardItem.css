@@ -1,0 +1,41 @@
+.dashboard-item-container {
+  display: flex;
+  flex-direction: column;
+  flex: 9;
+  align-content: center;
+  text-align: center;
+  margin: 10px;
+}
+.dashboard-item-container h2 {
+  color: teal;
+  font-size: 30px;
+  margin: 20px;
+}
+.post-Table {
+  text-align: center;
+  border-collapse: collapse;
+  width: 100%;
+}
+.post-Table td,
+.post-Table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.post-Table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.post-Table tr:hover {
+  background-color: #ddd;
+}
+.post-Table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: teal;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .dashboard-item-container {
+    margin: 5px;
+  }
+}

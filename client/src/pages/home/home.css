@@ -1,0 +1,27 @@
+/* .home-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, ifr));
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    'h h h h h h h h h h h h'
+    'p p p p p p p p p s s s';
+  grid-gap: 5px;
+}
+.header {
+  grid-area: h;
+}
+.posts {
+  grid-area: p;
+}
+.sidebar {
+  grid-area: s;
+} */
+.home {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .home {
+    display: grid;
+    grid-template-columns: repeat(auto-fit);
+  }
+}

@@ -1,0 +1,62 @@
+.contact-container {
+  height: 90vh;
+  align-content: center;
+  text-align: center;
+  background-image: url('./contact2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  color: black;
+  transition: all 2s ease;
+}
+.contact-body {
+  padding: 30px;
+}
+.contact-body h1 {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.contact-body h2 {
+  font-size: 25px;
+  margin: 20px 0px 5px 0px;
+}
+.contact-body h3 {
+  font-size: 22px;
+  margin: 10px 0px;
+}
+.contact-body p {
+  font-size: 18px;
+}
+.socialIcon-link {
+  margin-left: 10px;
+}
+.contact-socialIcon-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.socialIcon-list-item,
+.socialIcon-list-item i {
+  margin: 5px;
+  font-size: 30px;
+  color: teal;
+}
+.socialIcon-link:hover {
+  opacity: 0.7;
+}
+
+.socialIcon-list-item {
+  animation: spin 5s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.socialIcon-list-item:hover {
+  animation: none;
+}

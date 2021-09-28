@@ -1,0 +1,25 @@
+.profile-item-container {
+  display: flex;
+  flex-direction: column;
+  flex: 9;
+  align-items: center;
+  text-align: center;
+}
+
+.card img {
+  margin: 15px;
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.title {
+  color: grey;
+  font-size: 25px;
+  margin: 5px;
+}
+.card h1 {
+  font-size: 35px;
+  color: teal;
+  margin: 5px;
+}

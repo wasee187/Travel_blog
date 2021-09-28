@@ -57,7 +57,7 @@ const UserSchema = mongoose.Schema(
 );
 
 //virtual schema
-UserSchema.virtual('blogs', {
+UserSchema.virtual('posts', {
   ref: 'Post',
   localField: 'userName',
   foreignField: 'userName',

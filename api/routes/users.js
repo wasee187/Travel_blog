@@ -6,6 +6,7 @@ const {
   updateUserController,
   deleteUserController,
   getSingleUserController,
+  getPostsController,
 } = require('../controllers/userControllers');
 
 //UPDATE
@@ -16,5 +17,8 @@ router.delete('/:id', deleteUserController);
 
 //single user
 router.get('/:id', getSingleUserController);
+
+//get posts
+router.get('/:id/posts', getPostsController);
 
 module.exports = router;

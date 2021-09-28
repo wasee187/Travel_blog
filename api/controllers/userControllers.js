@@ -47,9 +47,20 @@ const deleteUserController = async (req, res) => {
     res.status(401).json('You can delete only your account');
   }
 };
+//get all post
+const getPostsController = async (req, res) => {
+  const id = req.params.id;
+  try {
+    const allPosts = await User.findById(id).populate('posts');
+    res.status(200).json(allPosts);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+};
 
 module.exports = {
   updateUserController,
   deleteUserController,
   getSingleUserController,
+  getPostsController,
 };
